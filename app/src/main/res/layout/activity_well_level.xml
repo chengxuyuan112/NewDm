@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorMainBack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_well_level" layout="@layout/toolbar_head_transparent" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_redetec" android:background="@mipmap/btn_circle_primary" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="Redetect" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wellLinear" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/toolbar_well_level">
+        <ImageView android:id="@id/oneWellTime_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ico_time" android:scaleType="centerInside" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/oneWellTime_name" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+        <ImageView android:id="@id/oneWellTime_choose" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@mipmap/ico_arrow_right_white" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_redetec" android:layout_below="@id/wellLinear">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bucket_ll" android:background="@mipmap/levelmeter_bg" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_below="@id/wellLinear" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/bucket" android:layout_width="32.0dip" android:layout_height="160.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/levelmeter_full" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_above="@id/btn_redetec" android:layout_below="@id/bucket_ll">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tank Fluid Level" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=" / bbl" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffd9534f" android:gravity="right" android:id="@id/tv1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ff353343" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas Line Pressure" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=" (psi)" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffd9534f" android:gravity="right" android:id="@id/tv2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ff353343" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Casing Pressure" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=" (psi)" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffd9534f" android:gravity="right" android:id="@id/tv3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ff353343" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

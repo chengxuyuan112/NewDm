@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mainBackColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/history_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor1" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Oil" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor2" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Water" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor3" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Current" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor4" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Gas" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor5" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Tubing" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn6" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor6" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Casing" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn7" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/lineColor7" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Fluid" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/sheet_choose" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@mipmap/ico_set_white" android:scaleType="centerInside" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/history_top">
+        <ProgressBar android:id="@id/progressBarh" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerHorizontal="true" />
+        <lecho.lib.hellocharts.view.LineChartView android:id="@id/line_chart" android:layout_width="fill_parent" android:layout_height="400.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

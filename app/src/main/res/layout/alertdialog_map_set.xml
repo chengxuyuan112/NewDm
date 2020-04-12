@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/all_dialog" android:background="@drawable/back_dialog_list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="500.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Well 001" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="37.0dip" android:text="Datasheets" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+            <TextView android:id="@id/tvnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+        </LinearLayout>
+        <ListView android:id="@id/sheetlist" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/transparent" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/layoutAddress_m" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="12.0dip">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_cancel" android:background="@drawable/btn_login_back2" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="Cancel" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_save_setting" android:background="@drawable/btn_login_back" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:text="Save Settings" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

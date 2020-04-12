@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/back_home_flist" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/fthanks_item_name" android:background="@drawable/back_home_flistitemtop" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="well01" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fthanks_item_backimg" android:background="@mipmap/bgtype_oil2" android:layout_width="fill_parent" android:layout_height="136.0dip" android:layout_margin="16.0dip">
+            <ImageView android:id="@id/fthanks_item_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_oilne" android:scaleType="centerInside" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/white" android:id="@id/fthanks_item_m1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.56" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fluid Level" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=" / ft" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffd9534f" android:gravity="right" android:id="@id/fthanks_item_m2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=" 0.1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorMainBack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/contral_toolbar" layout="@layout/toolbar_head_transparent" />
+    <ImageView android:id="@id/search_wells" android:clickable="true" android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/ico_search" android:scaleType="centerInside" android:layout_alignBottom="@id/contral_toolbar" android:layout_alignParentRight="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cancel" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="48.0dip" android:text="cancel" android:layout_alignBottom="@id/contral_toolbar" android:layout_alignParentRight="true" />
+    <EditText android:id="@id/et_search" android:background="@drawable/shape_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:hint="please search" android:maxLines="1" android:singleLine="true" android:drawableLeft="@mipmap/ico_search_s" android:layout_toLeftOf="@id/tv_cancel" android:layout_alignBottom="@id/contral_toolbar" android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/contralList" android:background="@color/mainBackColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/mainBackColor" android:dividerHeight="1.0dip" android:layout_below="@id/contral_toolbar" />
+</RelativeLayout>

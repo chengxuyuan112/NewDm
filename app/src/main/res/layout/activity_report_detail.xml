@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorMainBack">
+
+    <include
+        android:id="@id/reportdetail_toolbar"
+        layout="@layout/toolbar_head_transparent" />
+
+    <ImageView
+        android:id="@id/rbtn_search"
+        android:layout_width="50.0dip"
+        android:layout_height="48.0dip"
+        android:layout_alignBottom="@id/reportdetail_toolbar"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ico_search"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/wellLinear_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <ImageView
+            android:id="@id/oneWellTime_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_time" />
+
+        <TextView
+            android:id="@id/oneWellTime_name"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@id/oneWellTime_choose"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_arrow_up_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/wellLinear_buttom"
+        android:layout_below="@id/reportdetail_toolbar"
+        android:background="#ff1d1d27"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@id/oneWell_img"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ico_weller" />
+
+            <TextView
+                android:id="@id/oneWell_name"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="well001"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@id/oneWell_choose"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ico_filter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:background="#ff887c98"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/tv_table_title_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="总标题"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+
+            <com.xteamsoft.digitalpumper.widget.SyncHorizontalScrollView
+                android:id="@id/title_horsv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@id/right_title_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </com.xteamsoft.digitalpumper.widget.SyncHorizontalScrollView>
+        </LinearLayout>
+
+        <com.xteamsoft.digitalpumper.widget.pullrefresh.AbPullToRefreshView
+            android:id="@id/pulltorefreshview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@id/pull_refresh_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.xteamsoft.digitalpumper.widget.MyListView
+                        android:id="@id/left_container_listview"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:divider="#ff887c98"
+                        android:dividerHeight="1.0dip"
+                        android:scrollbars="none" />
+
+                    <com.xteamsoft.digitalpumper.widget.SyncHorizontalScrollView
+                        android:id="@id/content_horsv"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.0"
+                        android:fillViewport="true"
+                        android:scrollbars="none">
+
+                        <com.xteamsoft.digitalpumper.widget.MyListView
+                            android:id="@id/right_container_listview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ff353343"
+                            android:divider="#ff887c98"
+                            android:dividerHeight="1.0dip"
+                            android:scrollbars="none" />
+                    </com.xteamsoft.digitalpumper.widget.SyncHorizontalScrollView>
+                </LinearLayout>
+            </ScrollView>
+        </com.xteamsoft.digitalpumper.widget.pullrefresh.AbPullToRefreshView>
+    </LinearLayout>
+</RelativeLayout>

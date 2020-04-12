@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff0d0d11" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/home_headimg" android:background="@mipmap/banner_index" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/toptop1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/home_title" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toptop1">
+        <ImageView android:id="@id/iv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_remindgif" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/SmallBell0" android:background="@drawable/redcard" android:visibility="invisible" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/home_littleimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="24.0dip" android:src="@mipmap/logo_index" android:layout_below="@id/home_title" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_heng1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_littleimg">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_control" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_control" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Control" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_reports" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_reports" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Reports" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/home_heng1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_chart" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_chart" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Charts" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_video" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_videoplay" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Videos" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

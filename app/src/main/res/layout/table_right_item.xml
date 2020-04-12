@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_table_rightback" android:background="#ff353343" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item0" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item1" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item2" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item3" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:gravity="center" android:id="@id/tv_table_content_right_item4" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item5" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+    <TextView android:id="@id/tv_table_content_right_item6" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine1" />
+</LinearLayout>

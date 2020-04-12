@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/feagment_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/text3_main" />
+        <TextView android:id="@id/text3_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/main_bottom" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup_main" android:background="#ff05020f" android:paddingTop="3.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/main_bottom">
+            <RadioButton android:textSize="12.0sp" android:textColor="@drawable/textcolor_main" android:gravity="center" android:id="@id/rb_homePage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/wells" android:drawableTop="@drawable/selector_homepage" android:layout_weight="1.0" android:onClick="OnClick" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@drawable/textcolor_main" android:gravity="center" android:id="@id/rb_facility" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/facility" android:drawableTop="@drawable/selector_facility" android:layout_weight="1.0" android:onClick="OnClick" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@drawable/textcolor_main" android:gravity="center" android:id="@id/rb_map" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/map" android:drawableTop="@drawable/seclector_map" android:layout_weight="1.0" android:onClick="OnClick" />
+            <RadioButton android:textSize="12.0sp" android:textColor="@drawable/textcolor_main" android:gravity="center" android:id="@id/rb_my" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/me" android:drawableTop="@drawable/selector_my" android:layout_weight="1.0" android:onClick="OnClick" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/main_bottom" android:background="#ff05020f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

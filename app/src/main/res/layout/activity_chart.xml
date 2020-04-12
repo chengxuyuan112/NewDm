@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorMainBack">
+
+    <include
+        android:id="@id/toolbar_chart"
+        layout="@layout/toolbar_head_transparent" />
+
+    <LinearLayout
+        android:id="@id/wellLinear_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <ImageView
+            android:id="@id/oneWellTime_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_time" />
+
+        <TextView
+            android:id="@id/oneWellTime_name"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@id/oneWellTime_choose"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_arrow_up_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/wellLinear_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_below="@id/toolbar_chart"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <ImageView
+            android:id="@id/oneWellDetail_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_weller" />
+
+        <TextView
+            android:id="@id/oneWellDetail_name"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@id/oneWellDetail_choose"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_filter" />
+    </LinearLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@id/line_chart"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:layout_below="@id/wellLinear_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/wellLinear_buttom"
+        android:layout_below="@id/line_chart"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collection points"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text=""
+                android:textColor="#ff8d8d8d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ff17a08c"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff353343" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pumping speed"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text=" n/min"
+                android:textColor="#ff8d8d8d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ff17a08c"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff353343" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum load"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text=" / lb"
+                android:textColor="#ff8d8d8d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/tv3"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ff17a08c"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff353343" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum load"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text=" / lb"
+                android:textColor="#ff8d8d8d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/tv4"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ff17a08c"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff353343" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampling interval"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text=" / ms"
+                android:textColor="#ff8d8d8d"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/tv5"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#ff17a08c"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff353343" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <ImageView android:id="@id/oilWell_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ico_weller" android:scaleType="centerInside" />
+        <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/oilWell_name" android:paddingLeft="14.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/map" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ico_arrow_right_gray" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

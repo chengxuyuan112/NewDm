@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorMainBack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/welldetail_toolbar" layout="@layout/toolbar_head_transparent" />
+    <ImageView android:id="@id/choose_date" android:clickable="true" android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@mipmap/ico_search" android:scaleType="centerInside" android:layout_alignBottom="@id/welldetail_toolbar" android:layout_alignParentRight="true" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignBottom="@id/welldetail_toolbar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_dcphGroup_topBtn_container" android:background="@mipmap/segmentedctrol_bg" android:layout_width="190.0dip" android:layout_height="35.0dip" android:layout_centerHorizontal="true">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/id_dcphGroup_topBtn01" android:background="@mipmap/segmentedctrol_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="RealTime" android:layout_weight="1.0" />
+            <Button android:textSize="16.0sp" android:textColor="#fff26361" android:id="@id/id_dcphGroup_topBtn02" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="History" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/wellLinear_top" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/welldetail_toolbar">
+        <ImageView android:id="@id/oneWellDetail_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ico_weller" android:scaleType="centerInside" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/oneWellDetail_name" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+        <ImageView android:id="@id/oneWellDetail_choose" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@mipmap/ico_filter" android:scaleType="centerInside" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/id_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wellLinear_top" />
+</RelativeLayout>

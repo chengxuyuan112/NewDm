@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/all_dialog" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/back_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/time1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Today" />
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/time2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="7days" />
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/time3" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="30days" />
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/time4" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="180days" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/red" android:id="@id/btn_cancel" android:background="@drawable/back_dialog" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

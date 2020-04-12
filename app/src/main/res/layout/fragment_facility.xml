@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff0d0d11" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/home_headimg" android:background="@mipmap/banner_facility" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/toptop1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/home_title" android:paddingRight="15.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toptop1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_remindgif" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/SmallBell0" android:background="@drawable/redcard" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/home_littleimg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="24.0dip" android:src="@mipmap/logo_index" android:layout_below="@id/home_title" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_heng1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_littleimg">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_tanks" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_tanks" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tanks" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_separators" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_separators" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Separators" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/home_heng1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_gas" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_gastest" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Gas Meters" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn_userdefine" android:background="#cc1e1c2a" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_userdefine" android:scaleType="centerInside" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="User define" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

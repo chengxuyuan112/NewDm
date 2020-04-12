@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/merge_sales" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_0" android:text="@string/right_title_oil" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_1" android:text="@string/right_title_gas" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_2" android:text="@string/right_title_water" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_3" android:text="@string/right_title_tub" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_4" android:text="@string/right_title_cas" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_5" android:text="@string/right_title_fluid" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+    <TextView android:id="@id/tv_table_title_6" android:text="@string/right_title_date" style="@style/TextView_Table_Right" />
+    <TextView style="@style/verticalLine0" />
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorMainBack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_head_transparent" />
+    <LinearLayout android:orientation="vertical" android:background="#ff1d1d27" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="#deffffff" android:gravity="center_vertical" android:id="@id/tv_changePassword" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="Change Password" android:drawableRight="@mipmap/ico_arrow_right_gray" android:drawablePadding="10.0dip" />
+        <View android:background="@color/BaselineColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#deffffff" android:gravity="center_vertical" android:id="@id/tv_clearCache" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="Clear Cache" android:drawableRight="@mipmap/ico_arrow_right_gray" android:drawablePadding="10.0dip" />
+        <View android:background="@color/BaselineColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#deffffff" android:gravity="center_vertical" android:id="@id/tv_help" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="Help" android:drawableRight="@mipmap/ico_arrow_right_gray" android:drawablePadding="10.0dip" />
+        <View android:background="@color/BaselineColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#deffffff" android:gravity="center_vertical" android:id="@id/tv_update" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="New Version Update" android:drawableRight="@mipmap/ico_arrow_right_gray" android:drawablePadding="10.0dip" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="46.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_version_numbe" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+                <TextView android:id="@id/version_point" android:background="@drawable/redcard" android:visibility="invisible" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignTop="@id/tv_version_numbe" android:layout_alignRight="@id/tv_version_numbe" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/BaselineColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:background="@drawable/btn_sign_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sign out" android:onClick="SignOutLogin" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_item" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black80" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oil Interface" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/grey" android:id="@id/unit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=" / mm" android:layout_weight="1.0" />
+        <CheckBox android:gravity="right" android:id="@id/check" android:background="@drawable/btn_check_sheets" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:button="@null" />
+    </LinearLayout>
+    <View android:background="#ff353343" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

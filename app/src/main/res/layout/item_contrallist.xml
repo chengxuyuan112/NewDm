@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/contral_zhu" android:background="@color/BaselineColor" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/contral_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/ico_well" android:scaleType="centerInside" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/contral_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="WELL001" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff8d8d8d" android:ellipsize="end" android:id="@id/contral_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="locking" android:maxLines="2" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="#fff38108" android:id="@id/contral_level" android:background="@drawable/list_contral_back" android:paddingLeft="7.5dip" android:paddingTop="5.5dip" android:paddingRight="7.5dip" android:paddingBottom="5.5dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Level meter" />
+    </LinearLayout>
+</RelativeLayout>
